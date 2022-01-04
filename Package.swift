@@ -15,8 +15,8 @@ let package = Package(
     ],
     targets: [
         .target(name: "Fuzi",
+            dependencies: [],
             path: "Sources",
-
             // Headers and linking for libxml2
             swiftSettings:[.unsafeFlags(["-I$SDKROOT/usr/include/libxml2"])],
             linkerSettings: [.linkedLibrary("xml2")]
